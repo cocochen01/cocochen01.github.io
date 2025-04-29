@@ -15,6 +15,7 @@ import itchIcon from "../assets/images/icons/itch.png";
 import devpostIcon from "../assets/images/icons/devpost.png";
 
 import LoadContent from "../components/LoadContent";
+import ModelRender from "../components/ModelRender";
 
 const Home: React.FC = () => {
   const [contentId, setContentId] = useState<string>("aboutme");
@@ -73,7 +74,9 @@ const Home: React.FC = () => {
             </div>
 
             <div className="container__character">
-              <div id="container3D"></div>
+              <div id="container3D">
+                <ModelRender/>
+              </div>
             </div>
 
             <div className="container__items">
