@@ -1,0 +1,23 @@
+import React from "react";
+
+const AboutMeContent: React.FC = () => {
+  return (
+    <div className="information__body" id="info-body">
+      <h2>ABOUT ME</h2>
+      <p><b>Greetings!</b></p>
+      <p>My name is <b>Coco</b>, I'm an aspiring <b>Game Developer</b> with a passion for video games.</p>
+      <p>I use Unreal Engine and Unity as my main game engines and I am always taking on the challenge of learning new tools and skills. Check out some of my projects (including this webpage) by navigating the icons!</p>
+      <br />
+      <p>When I'm not making games, I'm playing them! Here are some of my favorites:</p>
+      <ul>
+        <li>Elden Ring</li>
+        <li>Assassin's Creed Odyssey</li>
+        <li>Civilization VI</li>
+        <li>The Binding of Isaac</li>
+        <li>Overwatch</li>
+      </ul>
+    </div>
+  );
+};
+
+export default AboutMeContent;
