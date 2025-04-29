@@ -14,12 +14,12 @@ const Item8Content: React.FC = () => {
       <p></p>
       <p><b>NOTABLE COURSES</b></p>
       <p>
-          Computer Graphics<br />
-          Principles of Web Development<br />
-          Database Management Systems<br />
-          Design of Operating Systems<br />
-          Information Retrieval<br />
-          Computer Security
+        Computer Graphics<br />
+        Principles of Web Development<br />
+        Database Management Systems<br />
+        Design of Operating Systems<br />
+        Information Retrieval<br />
+        Computer Security
       </p>
     </div>
   );
