@@ -5,6 +5,11 @@ body {
   width: 100vw;
   height: 100vh;
   cursor: url('assets/images/cursor/gauntlet0.png'), auto;
+  background-image: url('assets/images/textures/inn_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: #a9a9a9;
 }
 
@@ -29,6 +34,7 @@ main {
   background-image: url('assets/images/textures/stone_texture.png');
   background-size: cover;
   background-position: center;
+  background-color: #272726;
   flex: 2;
   flex-shrink: 0;
   display: flex;
@@ -37,7 +43,6 @@ main {
   min-height: 500px;
   margin-right: 20px;
   flex-direction: column;
-  background-color: #272726;
   border-radius: 20% 2% 2% / 15% 2% 2%;
   border: 0.2em solid rgb(99, 97, 90);
   box-shadow: inset 0 0 2em 0.2em #000, 0 0 0.2em 0.2em #000;
@@ -151,11 +156,11 @@ main {
   background-image: url('assets/images/textures/paper_texture.png');
   background-size: cover;
   background-position: center;
+  background-color:rgb(24, 24, 24);
   flex: 5;
   margin-top: 5px;
   margin-bottom: 5px;
   overflow: hidden;
-  background-color:rgb(24, 24, 24);
   border: 0.2em solid rgb(99, 97, 90);
   border-radius: 3%;
   box-shadow: inset 0 0 2em 0.5em #000, 0 0 0.3em 0.1em #000;
@@ -185,6 +190,7 @@ main {
   background-image: url('assets/images/textures/paper_texture.png');
   background-size: cover;
   background-position: center;
+  background-color: #272726;
   flex: 3;
   display: flex;
   flex-direction: column;
@@ -195,7 +201,6 @@ main {
   border: 0.2em solid rgb(99, 97, 90);
   border-radius: 1.5%;
   box-shadow: inset 0 0 2em 0.2em #000, 0 0 0.2em 0.2em #000;
-  background-color: #272726;
 }
 
 .information__body {
