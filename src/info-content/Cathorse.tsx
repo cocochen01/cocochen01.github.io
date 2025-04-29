@@ -6,7 +6,7 @@ import Screenshot3 from "../assets/images/screenshots/CathorseScreenshot3.png";
 
 const screenshots = [Screenshot1, Screenshot2, Screenshot3];
 
-const Item1Content: React.FC = () => {
+const Cathorse: React.FC = () => {
   return (
     <div className="information__body" id="info-body">
       <h2>CATHORSE RESCUE&nbsp;&nbsp;<span style={{ textShadow: "none", fontSize: "0.7em", color: "#ffffff80" }}>May 20, 2024</span></h2>
@@ -38,4 +38,4 @@ const Item1Content: React.FC = () => {
   );
 };
 
-export default Item1Content;
+export default Cathorse;

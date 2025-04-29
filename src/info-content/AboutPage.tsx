@@ -1,6 +1,6 @@
 import React from "react";
 
-const Item6Content: React.FC = () => {
+const AboutPage: React.FC = () => {
   return (
     <div className="information__body" id="info-body">
       <h2>ABOUT THIS WEBPAGE</h2>
@@ -15,4 +15,4 @@ const Item6Content: React.FC = () => {
   );
 };
 
-export default Item6Content;
+export default AboutPage;

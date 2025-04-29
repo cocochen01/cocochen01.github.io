@@ -1,6 +1,6 @@
 import React from "react";
 
-const Item8Content: React.FC = () => {
+const University: React.FC = () => {
   return (
     <div className="information__body" id="info-body">
       <h2>UNIVERSITY OF CALIFORNIA, RIVERSIDE&nbsp;&nbsp;<span style={{ textShadow: "none", fontSize: "0.7em", color: "#ffffff80" }}>2019 - 2023</span></h2>
@@ -25,4 +25,4 @@ const Item8Content: React.FC = () => {
   );
 };
 
-export default Item8Content;
+export default University;

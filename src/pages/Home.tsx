@@ -47,28 +47,32 @@ const Home: React.FC = () => {
           <div className="profile-container">
             <div className="container__items">
               <ItemButton
-                id="item1"
+                id="cathorse"
                 image={cathorse}
                 tooltip="CATHORSE RESCUE"
-                onClick={() => handleItemClick("item1")}
+                star={true}
+                onClick={() => handleItemClick("cathorse")}
               />
               <ItemButton
-                id="item2"
+                id="zumbido"
                 image={dz}
                 tooltip="DESERT ZUMBIDO"
-                onClick={() => handleItemClick("item2")}
+                star={false}
+                onClick={() => handleItemClick("zumbido")}
               />
               <ItemButton
-                id="item3"
+                id="timetocollect"
                 image={ratAlive}
                 tooltip="TIME TO COLLECT"
-                onClick={() => handleItemClick("item3")}
+                star={true}
+                onClick={() => handleItemClick("timetocollect")}
               />
               <ItemButton
-                id="item4"
+                id="startrails"
                 image={starTrails}
                 tooltip="STAR TRAILS"
-                onClick={() => handleItemClick("item4")}
+                star={false}
+                onClick={() => handleItemClick("startrails")}
               />
               <button className="item" id="item5" hidden />
             </div>
@@ -81,22 +85,25 @@ const Home: React.FC = () => {
 
             <div className="container__items">
               <ItemButton
-                id="item6"
+                id="aboutpage"
                 image={threejs}
                 tooltip="ABOUT THIS WEBSITE"
-                onClick={() => handleItemClick("item6")}
+                star={false}
+                onClick={() => handleItemClick("aboutpage")}
               />
               <ItemButton
-                id="item7"
+                id="blender"
                 image={blender}
                 tooltip="BLENDER PROJECTS"
-                onClick={() => handleItemClick("item7")}
+                star={false}
+                onClick={() => handleItemClick("blender")}
               />
               <ItemButton
-                id="item8"
+                id="university"
                 image={ucr}
                 tooltip="UNIVERSITY"
-                onClick={() => handleItemClick("item8")}
+                star={false}
+                onClick={() => handleItemClick("university")}
               />
             </div>
           </div>
@@ -137,16 +144,23 @@ type ItemButtonProps = {
   id: string;
   image: string;
   tooltip: string;
+  star: boolean;
   onClick: () => void;
 };
 
-const ItemButton: React.FC<ItemButtonProps> = ({ id, image, tooltip, onClick }) => (
+const ItemButton: React.FC<ItemButtonProps> = ({ id, image, tooltip, star, onClick }) => (
   <button
     className="item"
     id={id}
     style={{ backgroundImage: `url(${image})` }}
     onClick={onClick}
   >
+    {star && 
+      <div className="star-wrapper">
+        <div className="star-glow"></div>
+        <div className="star"></div>
+      </div>
+    }
     <div className="tooltip">{tooltip}</div>
   </button>
 );

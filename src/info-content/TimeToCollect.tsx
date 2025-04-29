@@ -9,7 +9,7 @@ import Video2 from "../assets/videos/ToC_Wordle.mp4";
 
 const screenshots = [Screenshot1, Screenshot2, Screenshot3, Screenshot4];
 
-const Item3Content: React.FC = () => {
+const TimeToCollect: React.FC = () => {
   return (
     <div className="information__body" id="info-body">
       <h2>TIME TO COLLECT&nbsp;&nbsp;<span style={{ textShadow: "none", fontSize: "0.7em", color: "#ffffff80" }}>September 14, 2023</span></h2>
@@ -73,4 +73,4 @@ const Item3Content: React.FC = () => {
   );
 };
 
-export default Item3Content;
+export default TimeToCollect;

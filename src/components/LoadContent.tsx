@@ -1,58 +1,37 @@
 import React from "react";
 import AboutMeContent from "../info-content/AboutMeContent";
-import Item1Content from "../info-content/Item1Content";
-import Item2Content from "../info-content/Item2Content";
-import Item3Content from "../info-content/Item3Content";
-import Item4Content from "../info-content/Item4Content";
+import Cathorse from "../info-content/Cathorse";
+import Zumbido from "../info-content/Zumbido";
+import TimeToCollect from "../info-content/TimeToCollect";
+import StarTrails from "../info-content/StarTrails";
 import Item5Content from "../info-content/Item5Content";
-import Item6Content from "../info-content/Item6Content";
-import Item7Content from "../info-content/Item7Content";
-import Item8Content from "../info-content/Item8Content";
+import AboutPage from "../info-content/AboutPage";
+import Blender from "../info-content/Blender";
+import University from "../info-content/University";
 
 type LoadContentProps = {
   contentId: string;
 };
 
+const contentMap: { [key: string]: React.FC } = {
+  aboutme: AboutMeContent,
+  cathorse: Cathorse,
+  zumbido: Zumbido,
+  timetocollect: TimeToCollect,
+  startrails: StarTrails,
+  item5: Item5Content,
+  aboutpage: AboutPage,
+  blender: Blender,
+  university: University,
+};
+
 const LoadContent: React.FC<LoadContentProps> = ({ contentId }) => {
   console.log(`LoadContent: Requested contentId = ${contentId}`);
 
-  let ContentComponent: React.FC | null = null;
-
-  switch (contentId) {
-    case "aboutme":
-      ContentComponent = AboutMeContent;
-      console.log("LoadContent: Rendering AboutMeContent.");
-      break;
-    case "item1":
-      ContentComponent = Item1Content;
-      break;
-    case "item2":
-      ContentComponent = Item2Content;
-      break;
-    case "item3":
-      ContentComponent = Item3Content;
-      break;
-    case "item4":
-      ContentComponent = Item4Content;
-      break;
-    case "item5":
-      ContentComponent = Item5Content;
-      break;
-    case "item6":
-      ContentComponent = Item6Content;
-      break;
-    case "item7":
-      ContentComponent = Item7Content;
-      break;
-    case "item8":
-      ContentComponent = Item8Content;
-      break;
-    default:
-      console.warn(`LoadContent: No matching content for "${contentId}".`);
-      break;
-  }
+  const ContentComponent = contentMap[contentId];
 
   if (!ContentComponent) {
+    console.warn(`LoadContent: No matching content for "${contentId}".`);
     return <div><p>Page not found.</p></div>;
   }
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Item4Content: React.FC = () => {
+const StarTrails: React.FC = () => {
   return (
     <div className="information__body" id="info-body">
       <h2>STAR TRAILS&nbsp;&nbsp;<span style={{ textShadow: "none", fontSize: "0.7em", color: "#ffffff80" }}>April 10, 2023</span></h2>
@@ -43,4 +43,4 @@ const Item4Content: React.FC = () => {
   );
 };
 
-export default Item4Content;
+export default StarTrails;

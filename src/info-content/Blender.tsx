@@ -10,7 +10,7 @@ import Screenshot3 from "../assets/images/screenshots/druid3.png";
 
 const screenshots = [Screenshot1, Screenshot2, Screenshot3];
 
-const Item7Content: React.FC = () => {
+const Blender: React.FC = () => {
   return (
     <div className="information__body" id="info-body">
       <h2>BLENDER PROJECTS</h2>
@@ -54,4 +54,4 @@ const Item7Content: React.FC = () => {
   );
 };
 
-export default Item7Content;
+export default Blender;
