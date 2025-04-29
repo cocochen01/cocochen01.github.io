@@ -34,6 +34,7 @@ const ModelRender: React.FC = () => {
         </Suspense>
         <OrbitControls
           enableZoom={false}
+          enablePan={false}
           minPolarAngle={Math.PI / 2.3}
           maxPolarAngle={Math.PI / 2.3}
           target={[0, 1.8, 0]}
