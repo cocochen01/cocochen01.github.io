@@ -7,7 +7,7 @@ import dz from "../assets/images/icons/DZ.png";
 import ratAlive from "../assets/images/icons/Rat_Alive.png";
 import starTrails from "../assets/images/icons/star_trails.png";
 import playwright from "../assets/images/icons/playwright.png"
-import threejs from "../assets/images/icons/threejs.png";
+import react from "../assets/images/icons/react.png";
 import blender from "../assets/images/icons/blender.png";
 import ucr from "../assets/images/icons/ucr.png";
 
@@ -95,9 +95,9 @@ const Home: React.FC = () => {
               />
               <ItemButton
                 id="aboutpage"
-                image={threejs}
+                image={react}
                 tooltip="ABOUT THIS WEBSITE"
-                star={false}
+                star={true}
                 onClick={() => handleItemClick("aboutpage")}
               />
               <ItemButton
