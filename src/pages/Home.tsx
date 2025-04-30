@@ -6,9 +6,11 @@ import cathorse from "../assets/images/icons/Cathorse.png";
 import dz from "../assets/images/icons/DZ.png";
 import ratAlive from "../assets/images/icons/Rat_Alive.png";
 import starTrails from "../assets/images/icons/star_trails.png";
+import playwright from "../assets/images/icons/playwright.png"
 import threejs from "../assets/images/icons/threejs.png";
 import blender from "../assets/images/icons/blender.png";
 import ucr from "../assets/images/icons/ucr.png";
+
 import githubIcon from "../assets/images/icons/github.png";
 import linkedinIcon from "../assets/images/icons/linkedin.png";
 import itchIcon from "../assets/images/icons/itch.png";
@@ -85,6 +87,13 @@ const Home: React.FC = () => {
 
             <div className="container__items">
               <ItemButton
+                id="playwright"
+                image={playwright}
+                tooltip="QA TESTING"
+                star={true}
+                onClick={() => handleItemClick("playwright")}
+              />
+              <ItemButton
                 id="aboutpage"
                 image={threejs}
                 tooltip="ABOUT THIS WEBSITE"
@@ -110,7 +119,7 @@ const Home: React.FC = () => {
 
           <div className="profile-stats">
             <div className="stats">
-              <p>Unreal Engine 5 • Unity • C++ • C# • Javascript</p>
+              <p>C++ • C# • Javascript • Unity • Unreal Engine 5</p>
               <p>
                 <a href="https://github.com/cocochen01">
                   <img src={githubIcon} className="imgID" alt="GitHub" />

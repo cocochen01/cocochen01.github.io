@@ -5,6 +5,7 @@ import Zumbido from "../info-content/Zumbido";
 import TimeToCollect from "../info-content/TimeToCollect";
 import StarTrails from "../info-content/StarTrails";
 import Item5Content from "../info-content/Item5Content";
+import Playwright from "../info-content/Playwright";
 import AboutPage from "../info-content/AboutPage";
 import Blender from "../info-content/Blender";
 import University from "../info-content/University";
@@ -20,6 +21,7 @@ const contentMap: { [key: string]: React.FC } = {
   timetocollect: TimeToCollect,
   startrails: StarTrails,
   item5: Item5Content,
+  playwright: Playwright,
   aboutpage: AboutPage,
   blender: Blender,
   university: University,
