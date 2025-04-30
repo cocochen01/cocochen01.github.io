@@ -36,10 +36,9 @@ const TimeToCollect: React.FC = () => {
         </div>
       </div>
       <p>
-          Time to Collect is a game made in UE 5.3 by a team I put together consisting of some programmer and artist friends of mine. TTC was made for the 2023 Epic Mega Jam and the theme was ANTIQUE.
-          We completed the game but unfortunately didn't manage to submit on time. Still, it was a fantastic first experience with Unreal Engine and I learned a great deal.
+          Time to Collect is a game about collecting antique objects scattered randomly in a procedurally generated room. TTC was made by myself and the team I put together for the 2023 Epic Mega Jam. 
+          You play as a rat who collects objects scattered around the room while avoiding a deadly roomba and other security, take a look!
       </p>
-      <p>You play as a rat who collects objects scattered around the room while avoiding a deadly roomba and other security, take a look!</p>
       <br />
       <p><b>DEMO</b></p>
       <iframe src="https://www.youtube.com/embed/uGmfmViE7pE?si=Va1TVgHsTV_BVNZp" title="Time to Collect" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
@@ -49,13 +48,6 @@ const TimeToCollect: React.FC = () => {
       <Slideshow images={screenshots} />
       <p></p>
       <p></p>
-      <p><b>VERSION CONTROL</b></p>
-      <p>Our game is built on Unreal Engine 5 but we opted to use Unity's Plastic SCM as our source control. Setting up Plastic was a bit of challenge in the beginning, but it's built in branch interface and ease of use for our artist was worth it.</p>
-      <p>
-          After the jam deadline, we decided to transfer the game onto a GitHub repository instead.
-          Using Git as our version control will allow us to more easily collaborate with our artists as well as providing us with the other functionalities of GitHub such as the Project board feature.
-      </p>
-      <br />
       <p><b>FEATURES: Procedural Room Generation</b></p>
       <p>The random procedural room generation was my centerpiece feature. Most of my time was spent getting the room generation just right so that each run of the game would have it's own unique room layout.</p>
       <p>
