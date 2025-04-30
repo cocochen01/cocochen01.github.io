@@ -24,24 +24,20 @@ const Cathorse: React.FC = () => {
         <div className="icon__container">
           <div className="icons">
             <img src={unity} alt="Unity" style={{float: "right", width: "18%", transform: "translate(-50%, -50%)", margin: "2%"}}></img>
-            <img src={csharp} alt="C Sharp" style={{float: "right", width: "18%", transform: "translate(-50%, -50%)", margin: "2%"}}></img>
+            <img src={csharp} alt="C#" style={{float: "right", width: "18%", transform: "translate(-50%, -50%)", margin: "2%"}}></img>
           </div>
           <div className="icons">
           </div>
         </div>
       </div>
-      <p>Cathorse Rescue is a game about rescuing your cat-seahorse friend. The game was made for Pixel Jam 2024 with a 3-person team with myself as the primary programmer.</p>
+      <p>A beat-em-up inspired by Castle Crashers' aerial combos, Cathorse Rescue is a game about rescuing your cat-seahorse friend. The game was made during Pixel Jam 2024.</p>
       <p><a href="https://ococ.itch.io/cathorse-rescue" target="_blank">Cathorse Rescue</a> is WebGL game and hosted on itch.io, give it a try!</p>
       <br />
       <p><b>SCREENSHOTS</b></p>
       <Slideshow images={screenshots} />
       <p></p>
       <p></p>
-      <p><b>VERSION CONTROL</b></p>
-      <p>Cathorse was made in Unity so we opted to use Unity's built in VCS. Although Git is my preferred VCS, Unity's VCS worked very well for us this time with the use of good branch management.</p>
-      <br />
       <p><b>FEATURES: Movement and Aerial Combat</b></p>
-      <p>My main inspiration for the game's combat was Castle Crashers. I wanted to emulate the way the player traverses the screen in mid-air as they smacked the enemies.</p>
       <p>
           The character is controlled with a Character Controller component and the physics is manually implemented in C#.
           This gave me more control of player-enemy interactions and prevents issue like unintended rotations and clipping that might occur using Unity's physics system.
@@ -50,7 +46,7 @@ const Cathorse: React.FC = () => {
       <br />
       <p><b>FEATURES: Enemy AI</b></p>
       <p>
-          In the current implementation of the game, enemies have a simple AI that only adds to a movement vector the direction of the player in range.
+          Enemies have a simple AI that approaches the player in a linear path.
           Some other AI behaviors like circling the player exists but are not in use due to the time constraints for the game jam.
           The script is designed so that an enemy can make use of multiple behaviors like following, circling, and keeping away simultaneously or even change behaviors depending on conditions.
       </p>
