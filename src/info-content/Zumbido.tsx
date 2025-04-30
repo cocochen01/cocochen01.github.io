@@ -3,6 +3,7 @@ import React from "react";
 import Slideshow from "../components/Slideshow";
 
 // Icons
+import link from "../assets/images/icons/external-link.png";
 import unreal from "../assets/images/icons/unreal.png";
 import cpp from "../assets/images/icons/cpp.png";
 
@@ -18,6 +19,7 @@ const Zumbido: React.FC = () => {
     <div className="information__body" id="info-body">
       <div className="title__container">
         <h2 className="title">DESERT ZUMBIDO&nbsp;&nbsp;<span style={{ textShadow: "none", fontSize: "0.7em", color: "#ffffff80" }}>December 1, 2023&nbsp;&nbsp;</span>
+          <a href="https://ococ.itch.io/desertzumbido" target="_blank"><img src={link} className="external-link" style={{ width: "3%"}}></img></a>
         </h2>
         <div className="icon__container">
           <div className="icons">
@@ -29,8 +31,8 @@ const Zumbido: React.FC = () => {
         </div>
       </div>
       <p>
-          <a href="https://ococ.itch.io/desertzumbido">Desert Zumbido</a> is a game my friends and I made for Game Off 2023, whose theme was SCALE.
-          Our idea was to create a tower defense game in the style of Dungeon Defenders set in a western post-apocalyptic town. You play as a gunslinging lizard defending your home from mutant zombie insects.
+          Game made for Game Off 2023, whose theme was SCALE.
+          It is a tower defense game in the style of Dungeon Defenders set in a western post-apocalyptic town. You are a gunslinging lizard defending your home from mutant zombie insects.
       </p>
       <p>Although the game is unfinished, it contains some features that I implemented that I am proud of, and it was overall a great learning experience in Unreal Engine.</p>
       <br />
@@ -38,17 +40,13 @@ const Zumbido: React.FC = () => {
       <Slideshow images={screenshots} />
       <p></p>
       <p></p>
-      <p><b>VERSION CONTROL</b></p>
-      <p>Game Off is a jam hosted by GitHub so we, obviously, used GitHub as our version control.</p>
-      <p>It's hard to beat the ease of setting up GitHub as our VCS, as long as we ensured our artists worked on their own sections of the projects, we had minimal issues with merges and binary files.</p>
-      <br />
       <p><b>FEATURES: Enemy AI and Navigation</b></p>
-      <p>For this project, I really wanted to try learning how to make interesting enemy AI. I used Unreal's built in navmesh with some empty vector location objects to guild the enemies along a path toward the center tower.</p>
+      <p>Enemy navigation uses unreal's built in navmesh with some empty vector location objects to guide the enemies along a path toward the center.</p>
       <br />
       <p><b>FEATURES: Tower Placement</b></p>
       <p>
-          The first feature I worked on was a way to place towers and keep track of each tower placed.
-          It was a fairly simple implementation but it does have the additional feature of previewing a tower before you placed it and ensuring that towers have a zone around them to prevent towers from being placed to close together.
+          Keeps track of tower prefabs that can be placed, and keeps track of placed towers.
+          Additional feature of previewing a tower before you placed it and ensuring that towers have a zone around them to prevent towers from being placed to close together.
       </p>
       <br />
     </div>
