@@ -11,7 +11,7 @@ const AboutPage: React.FC = () => {
   return (
     <div className="information__body" id="info-body">
       <div className="title__container">
-        <h2 className="title">ABOUT THIS WEBPAGE</h2>
+        <h2 className="title">ABOUT THIS WEBSITE</h2>
         <div className="icon__container">
           <div className="icons">
             <img src={threejs} alt="ThreeJS" style={{float: "right", width: "18%", transform: "translate(-50%, -50%)", margin: "2%"}}></img>

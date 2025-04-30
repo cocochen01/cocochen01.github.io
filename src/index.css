@@ -171,7 +171,11 @@ main {
   position: absolute;
   width: 80%;
   height: 80%;
-  box-shadow: 0 0 1.8em 0.18em rgb(255, 255, 134), 0 0 2.4em 0 rgb(228, 228, 115);
+  box-shadow:
+  0 0 0.5em 0.05em rgba(255, 255, 134, 1),
+  0 0 0.5em 0.05em rgba(255, 255, 134, 0.8),
+  0 0 0.7em 0 rgba(228, 228, 115, 0.7),
+  0 0 0.7em 0 rgba(228, 228, 115, 0.6);
   border-radius: 50%;
   z-index: 1;
   opacity: .5;
