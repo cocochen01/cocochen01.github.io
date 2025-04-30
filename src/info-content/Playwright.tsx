@@ -6,6 +6,9 @@ import ts from "../assets/images/icons/typescript.png";
 import js from "../assets/images/icons/javascript.png";
 import playwright from "../assets/images/icons/playwright.png";
 
+// Gif
+import demo from "../assets/images/screenshots/demo.gif";
+
 const Playwright: React.FC = () => {
   return (
     <div className="information__body" id="info-body">
@@ -24,7 +27,13 @@ const Playwright: React.FC = () => {
           </div>
         </div>
       </div>
-      <p>QA testing</p>
+      <p>
+        Playwright testing for static UI elements of Hacker News. This project was an exercise in implementing the Page Object Model and adhering to Playwright's best practices.
+        It explores the more advanced features of Playwright such as custom fixtures and global setups/teardowns.
+      </p>
+      <p><b>DEMO</b></p>
+      <img src={demo} alt="Demo"></img>
+      <p></p>
     </div>
   );
 };
