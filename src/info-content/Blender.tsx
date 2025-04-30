@@ -32,40 +32,31 @@ const Blender: React.FC = () => {
         </div>
       </div>
       <p>
-          To become more familiar with the technical side of game art, I picked up some Blender skills and made my own 3D character models. Each of the models here were made from scratch and modeled, textured, rigged, and animated by myself.
-          I've learned a lot about making and implementing engine-ready game models from these mini projects.
+          Some Blender models I have made for various games and other projects. I am self-taught in modeling, rigging, and animating. 
+          Making my own game models and implementing them in engine gave me an understanding of the technical artist's process, and this has helped me greatly when working with artists in game jams.
       </p>
       <br />
       <p><b>FOX</b></p>
-      <p>A model I made for my Senior Project game. He has 4 animations for each cardinal direction of movement. Using Unity's blend tree, I created a 8-directional animations from those animations by blending them together for the diagonal directions.</p>
       <div style={{ display: "flex" }}>
           <img style={{ width: "35%" }} src={Fox} />
           <video controls style={{ width: "65%" }}>
               <source src={FoxVideo} type="video/mp4"/>
-              Unable to load video.
+              Loading video.
           </video>
       </div>
       <p></p>
       <p></p>
-      <p><b>DRAGON</b></p>
-      <p>
-          A quick, low-poly model I made of my D&D character as part of my first test-game on Unreal.
-          After struggling to make 4 animations for my Fox model, I decided to reduce my work by only making a forward and backward moving animation and simply turn the character programmatically instead.
-      </p>
+      <p><b>D&D CHARACTER</b></p>
       <div style={{ display: "flex" }}>
           <img style={{ width: "35%" }} src={Dragon} />
           <video controls style={{ width: "65%" }}>
               <source src={DragonVideo} type="video/mp4"/>
-              Unable to load video.
+              Loading video.
           </video>
       </div>
       <p></p>
       <p></p>
-      <p><b>DRUID-NECROMANCER</b></p>
-      <p>
-          I made this in 2022 and it was my first time modeling, painting, and rigging in Blender. She is my concept for a druid-necromancer whose fighting moves involve animal spirits.
-          I've always enjoyed making art and this was a really fun exercise of my skills, but it made me realize that it's a bit too ambitious to try and make every part of a game by yourself.
-      </p>
+      <p><b>DRUID-NECROMANCER CONCEPT</b></p>
       <Slideshow images={screenshots} />
     </div>
   );
