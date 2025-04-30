@@ -206,7 +206,9 @@ main {
 }
 
 .icons {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
+  overflow: visible;
   filter: grayscale(100%) sepia(100%);
 }
 

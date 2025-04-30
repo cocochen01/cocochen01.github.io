@@ -1,5 +1,13 @@
 import React from "react";
+
 import Slideshow from "../components/Slideshow";
+
+// Icons
+import link from "../assets/images/icons/external-link.png";
+import unity from "../assets/images/icons/unity.png";
+import csharp from "../assets/images/icons/csharp.png";
+
+// Screenshots
 import Screenshot1 from "../assets/images/screenshots/CathorseScreenshot1.png";
 import Screenshot2 from "../assets/images/screenshots/CathorseScreenshot2.png";
 import Screenshot3 from "../assets/images/screenshots/CathorseScreenshot3.png";
@@ -9,9 +17,21 @@ const screenshots = [Screenshot1, Screenshot2, Screenshot3];
 const Cathorse: React.FC = () => {
   return (
     <div className="information__body" id="info-body">
-      <h2>CATHORSE RESCUE&nbsp;&nbsp;<span style={{ textShadow: "none", fontSize: "0.7em", color: "#ffffff80" }}>May 20, 2024</span></h2>
+      <div className="title__container">
+        <h2 className="title">CATHORSE RESCUE&nbsp;&nbsp;<span style={{ textShadow: "none", fontSize: "0.7em", color: "#ffffff80" }}>May 20, 2024&nbsp;&nbsp;</span>
+            <a href="https://ococ.itch.io/cathorse-rescue" target="_blank"><img src={link} className="external-link" style={{ width: "3%"}}></img></a>
+        </h2>
+        <div className="icon__container">
+          <div className="icons">
+            <img src={unity} alt="Unity" style={{float: "right", width: "18%", transform: "translate(-50%, -50%)", margin: "2%"}}></img>
+            <img src={csharp} alt="C Sharp" style={{float: "right", width: "18%", transform: "translate(-50%, -50%)", margin: "2%"}}></img>
+          </div>
+          <div className="icons">
+          </div>
+        </div>
+      </div>
       <p>Cathorse Rescue is a game about rescuing your cat-seahorse friend. The game was made for Pixel Jam 2024 with a 3-person team with myself as the primary programmer.</p>
-      <p><a href="https://ococ.itch.io/cathorse-rescue">Cathorse Rescue</a> is WebGL game and hosted on itch.io, give it a try!</p>
+      <p><a href="https://ococ.itch.io/cathorse-rescue" target="_blank">Cathorse Rescue</a> is WebGL game and hosted on itch.io, give it a try!</p>
       <br />
       <p><b>SCREENSHOTS</b></p>
       <Slideshow images={screenshots} />

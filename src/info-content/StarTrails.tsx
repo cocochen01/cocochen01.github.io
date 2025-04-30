@@ -1,9 +1,24 @@
 import React from "react";
 
+// Icons
+import unity from "../assets/images/icons/unity.png";
+import csharp from "../assets/images/icons/csharp.png";
+
 const StarTrails: React.FC = () => {
   return (
     <div className="information__body" id="info-body">
-      <h2>STAR TRAILS&nbsp;&nbsp;<span style={{ textShadow: "none", fontSize: "0.7em", color: "#ffffff80" }}>April 10, 2023</span></h2>
+    <div className="title__container">
+      <h2 className="title">STAR TRAILS&nbsp;&nbsp;<span style={{ textShadow: "none", fontSize: "0.7em", color: "#ffffff80" }}>April 10, 2023&nbsp;&nbsp;</span>
+      </h2>
+      <div className="icon__container">
+        <div className="icons">
+          <img src={unity} alt="Unity" style={{float: "right", width: "18%", transform: "translate(-50%, -50%)", margin: "2%"}}></img>
+          <img src={csharp} alt="C Sharp" style={{float: "right", width: "18%", transform: "translate(-50%, -50%)", margin: "2%"}}></img>
+        </div>
+        <div className="icons">
+        </div>
+      </div>
+      </div>
       <p>Star Trails is a game built in Unity as my Senior Design project.</p>
       <p>This was my first real experience developing with a game engine and collaborating using a properly set up version control system.</p>
       <p>My Senior Design group was one of the best teams I've been a part of and we're proud of the work we did over the course of the semester, have a look at our demo!</p>

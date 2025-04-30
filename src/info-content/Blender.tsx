@@ -1,19 +1,36 @@
 import React from "react";
+
 import Slideshow from "../components/Slideshow";
-import FoxVideo from "../assets/videos/fox_demo.mp4";
+
+// Icons
+import blender from "../assets/images/icons/blender.png";
+
+// Screenshots
 import Fox from "../assets/images/screenshots/fox.png";
-import DragonVideo from "../assets/videos/dragon_demo.mp4"
 import Dragon from "../assets/images/screenshots/dragon.png";
 import Screenshot1 from "../assets/images/screenshots/druid1.png";
 import Screenshot2 from "../assets/images/screenshots/druid2.png";
 import Screenshot3 from "../assets/images/screenshots/druid3.png";
+
+// Videos
+import FoxVideo from "../assets/videos/fox_demo.mp4";
+import DragonVideo from "../assets/videos/dragon_demo.mp4"
 
 const screenshots = [Screenshot1, Screenshot2, Screenshot3];
 
 const Blender: React.FC = () => {
   return (
     <div className="information__body" id="info-body">
-      <h2>BLENDER PROJECTS</h2>
+      <div className="title__container">
+        <h2 className="title">BLENDER PROJECTS</h2>
+        <div className="icon__container">
+          <div className="icons">
+            <img src={blender} alt="Blender" style={{float: "right", width: "18%", transform: "translate(-50%, -50%)", margin: "2%"}}></img>
+          </div>
+          <div className="icons">
+          </div>
+        </div>
+      </div>
       <p>
           To become more familiar with the technical side of game art, I picked up some Blender skills and made my own 3D character models. Each of the models here were made from scratch and modeled, textured, rigged, and animated by myself.
           I've learned a lot about making and implementing engine-ready game models from these mini projects.

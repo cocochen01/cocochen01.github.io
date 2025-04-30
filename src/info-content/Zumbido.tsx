@@ -1,5 +1,12 @@
 import React from "react";
+
 import Slideshow from "../components/Slideshow";
+
+// Icons
+import unreal from "../assets/images/icons/unreal.png";
+import cpp from "../assets/images/icons/cpp.png";
+
+// Screenshots
 import Screenshot1 from "../assets/images/screenshots/DesertScreenshot1.png";
 import Screenshot2 from "../assets/images/screenshots/DesertScreenshot2.png";
 import Screenshot3 from "../assets/images/screenshots/DesertScreenshot3.png";
@@ -9,7 +16,18 @@ const screenshots = [Screenshot1, Screenshot2, Screenshot3];
 const Zumbido: React.FC = () => {
   return (
     <div className="information__body" id="info-body">
-      <h2>DESERT ZUMBIDO (unfinished)&nbsp;&nbsp;<span style={{ textShadow: "none", fontSize: "0.7em", color: "#ffffff80" }}>December 1, 2023</span></h2>
+      <div className="title__container">
+        <h2 className="title">DESERT ZUMBIDO&nbsp;&nbsp;<span style={{ textShadow: "none", fontSize: "0.7em", color: "#ffffff80" }}>December 1, 2023&nbsp;&nbsp;</span>
+        </h2>
+        <div className="icon__container">
+          <div className="icons">
+            <img src={unreal} alt="Unreal Engine" style={{float: "right", width: "18%", transform: "translate(-50%, -50%)", margin: "2%"}}></img>
+            <img src={cpp} alt="C++" style={{float: "right", width: "18%", transform: "translate(-50%, -50%)", margin: "2%"}}></img>
+          </div>
+          <div className="icons">
+          </div>
+        </div>
+      </div>
       <p>
           <a href="https://ococ.itch.io/desertzumbido">Desert Zumbido</a> is a game my friends and I made for Game Off 2023, whose theme was SCALE.
           Our idea was to create a tower defense game in the style of Dungeon Defenders set in a western post-apocalyptic town. You play as a gunslinging lizard defending your home from mutant zombie insects.

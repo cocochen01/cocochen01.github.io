@@ -1,9 +1,19 @@
 import React from "react";
+
 import Slideshow from "../components/Slideshow";
+
+// Icons
+import link from "../assets/images/icons/external-link.png";
+import unreal from "../assets/images/icons/unreal.png";
+import cpp from "../assets/images/icons/cpp.png";
+
+// Screenshots
 import Screenshot1 from "../assets/images/screenshots/RatScreenshot1.png";
 import Screenshot2 from "../assets/images/screenshots/RatScreenshot2.png";
 import Screenshot3 from "../assets/images/screenshots/RatScreenshot3.png";
 import Screenshot4 from "../assets/images/screenshots/RatScreenshot4.png";
+
+// Videos
 import Video1 from "../assets/videos/ToC_ProcGen.mp4";
 import Video2 from "../assets/videos/ToC_Wordle.mp4";
 
@@ -12,7 +22,19 @@ const screenshots = [Screenshot1, Screenshot2, Screenshot3, Screenshot4];
 const TimeToCollect: React.FC = () => {
   return (
     <div className="information__body" id="info-body">
-      <h2>TIME TO COLLECT&nbsp;&nbsp;<span style={{ textShadow: "none", fontSize: "0.7em", color: "#ffffff80" }}>September 14, 2023</span></h2>
+    <div className="title__container">
+      <h2 className="title">TIME TO COLLECT&nbsp;&nbsp;<span style={{ textShadow: "none", fontSize: "0.7em", color: "#ffffff80" }}>September 14, 2023&nbsp;&nbsp;</span>
+          <a href="https://ococ.itch.io/time-to-collect" target="_blank"><img src={link} className="external-link" style={{ width: "3%"}}></img></a>
+        </h2>
+        <div className="icon__container">
+          <div className="icons">
+            <img src={unreal} alt="Unreal Engine" style={{float: "right", width: "18%", transform: "translate(-50%, -50%)", margin: "2%"}}></img>
+            <img src={cpp} alt="C++" style={{float: "right", width: "18%", transform: "translate(-50%, -50%)", margin: "2%"}}></img>
+          </div>
+          <div className="icons">
+          </div>
+        </div>
+      </div>
       <p>
           Time to Collect is a game made in UE 5.3 by a team I put together consisting of some programmer and artist friends of mine. TTC was made for the 2023 Epic Mega Jam and the theme was ANTIQUE.
           We completed the game but unfortunately didn't manage to submit on time. Still, it was a fantastic first experience with Unreal Engine and I learned a great deal.

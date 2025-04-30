@@ -1,5 +1,9 @@
 import React from "react";
+
+// Icons
 import link from "../assets/images/icons/external-link.png";
+import ts from "../assets/images/icons/typescript.png";
+import js from "../assets/images/icons/javascript.png";
 import playwright from "../assets/images/icons/playwright.png";
 
 const Playwright: React.FC = () => {
@@ -12,14 +16,11 @@ const Playwright: React.FC = () => {
         </h2>
         <div className="icon__container">
           <div className="icons">
-            <img src={playwright} style={{float: "right", width: "18%"}}></img>
-            <img src={playwright} style={{float: "right", width: "18%"}}></img>
-            <img src={playwright} style={{float: "right", width: "18%"}}></img>
-            <img src={playwright} style={{float: "right", width: "18%"}}></img>
+            <img src={playwright} alt="Playwright" style={{float: "right", width: "18%", transform: "translate(-50%, -50%)", margin: "2%"}}></img>
+            <img src={ts} alt="Typescript" style={{float: "right", width: "18%", transform: "translate(-50%, -50%)", margin: "2%"}}></img>
+            <img src={js} alt="Javascript" style={{float: "right", width: "18%", transform: "translate(-50%, -50%)", margin: "2%"}}></img>
           </div>
           <div className="icons">
-            <img src={playwright} style={{float: "right", width: "15%"}}></img>
-            <img src={playwright} style={{float: "right", width: "15%"}}></img>
           </div>
         </div>
       </div>
