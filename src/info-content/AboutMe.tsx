@@ -13,12 +13,9 @@ const AboutMe: React.FC = () => {
       <p></p>
       <p></p>
       <p>When I'm not programming, I'm playing games! Here are some of my favorites:</p>
-      <ul>
-        <li>Elden Ring</li>
-        <li>The Witcher 3</li>
-        <li>Balatro</li>
-        <li>Slay the Spire</li>
-      </ul>
+      <div style={{ textAlign:"center"}}>
+      <span style={{ textShadow: "none", fontSize: "1em", color: "#ffffff80" }}>Elden Ring • The Witcher 3 • Balatro • Slay the Spire</span>
+      </div>
     </div>
   );
 };
