@@ -4,12 +4,10 @@ const University: React.FC = () => {
   return (
     <div className="information__body" id="info-body">
       <h2>UNIVERSITY OF CALIFORNIA, RIVERSIDE&nbsp;&nbsp;<span style={{ textShadow: "none", fontSize: "0.7em", color: "#ffffff80" }}>2019 - 2023</span></h2>
-      <p>I am a recent <b>Computer Science</b> graduate from UC Riverside.</p>
+      <p><b>B.S. in Computer Science</b></p>
       <p>
-          During the course of my academic career, I've developed my programming skills and internalized fundamental principles of engineering and problem solving.
-          To me, programming is more than just solving problems efficiently, it's creating lasting structures that can be built upon and improved by yourself and others.
+        While attending UCR, I participated in various Hackathons and programming competitions.
       </p>
-      <p>I use principles of code reusability, design patterns, and modularity in all of my work and I hope to apply my knowledge in the field of <b>Game Development</b>.</p>
       <p></p>
       <p></p>
       <p><b>NOTABLE COURSES</b></p>
