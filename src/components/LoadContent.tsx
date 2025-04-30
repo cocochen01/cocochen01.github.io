@@ -1,5 +1,5 @@
 import React from "react";
-import AboutMeContent from "../info-content/AboutMeContent";
+import AboutMe from "../info-content/AboutMe";
 import Cathorse from "../info-content/Cathorse";
 import Zumbido from "../info-content/Zumbido";
 import TimeToCollect from "../info-content/TimeToCollect";
@@ -15,7 +15,7 @@ type LoadContentProps = {
 };
 
 const contentMap: { [key: string]: React.FC } = {
-  aboutme: AboutMeContent,
+  aboutme: AboutMe,
   cathorse: Cathorse,
   zumbido: Zumbido,
   timetocollect: TimeToCollect,
