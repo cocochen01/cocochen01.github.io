@@ -32,7 +32,7 @@ const Playwright: React.FC = () => {
         It explores the more advanced features of Playwright such as custom fixtures and global setups/teardowns.
       </p>
       <p><b>DEMO</b></p>
-      <img src={demo} alt="Demo"></img>
+      <img src={demo} alt="Loading demo"></img>
       <p></p>
     </div>
   );
