@@ -10,14 +10,14 @@ const AboutMe: React.FC = () => {
         I'm currently working on refining my Javascript skills for various projects in React, Three.js, and Playwright. 
         I've grown significantly as a developer through game projects, gaining experience in leading teams, organizing workflows, and maintaining clean, modular code.
       </p>
-      <br />
-      <p>When I'm not making games, I'm playing them! Here are some of my favorites:</p>
+      <p></p>
+      <p></p>
+      <p>When I'm not programming, I'm playing games! Here are some of my favorites:</p>
       <ul>
         <li>Elden Ring</li>
-        <li>Assassin's Creed Odyssey</li>
-        <li>Civilization VI</li>
-        <li>The Binding of Isaac</li>
-        <li>Overwatch</li>
+        <li>The Witcher 3</li>
+        <li>Balatro</li>
+        <li>Slay the Spire</li>
       </ul>
     </div>
   );

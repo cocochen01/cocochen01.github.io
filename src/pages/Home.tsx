@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../index.css";
 
-import pfp from "../assets/images/icons/pfp.png";
+// import pfp from "../assets/images/icons/pfp.png";
 import cathorse from "../assets/images/icons/Cathorse.png";
 import dz from "../assets/images/icons/DZ.png";
 import ratAlive from "../assets/images/icons/Rat_Alive.png";
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
             <button
               className="header-pic"
               id="item0"
-              style={{ backgroundImage: `url(${pfp})` }}
+              style={{ backgroundImage: `url(https://avatars.githubusercontent.com/u/56405172)` }}
               onClick={() => handleItemClick("aboutme")}
             >
               <div className="tooltip">ABOUT ME</div>
@@ -96,7 +96,7 @@ const Home: React.FC = () => {
               <ItemButton
                 id="aboutpage"
                 image={react}
-                tooltip="ABOUT THIS WEBSITE"
+                tooltip="REACT WEBSITE"
                 star={true}
                 onClick={() => handleItemClick("aboutpage")}
               />
