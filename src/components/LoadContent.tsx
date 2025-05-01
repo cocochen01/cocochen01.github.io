@@ -28,12 +28,12 @@ const contentMap: { [key: string]: React.FC } = {
 };
 
 const LoadContent: React.FC<LoadContentProps> = ({ contentId }) => {
-  console.log(`LoadContent: Requested contentId = ${contentId}`);
+  console.log(`LoadContent: ${contentId}`);
 
   const ContentComponent = contentMap[contentId];
 
   if (!ContentComponent) {
-    console.warn(`LoadContent: No matching content for "${contentId}".`);
+    console.warn(`LoadContent: ${contentId}`);
     return <div><p>Page not found.</p></div>;
   }
 
