@@ -119,7 +119,9 @@ const Home: React.FC = () => {
 
           <div className="profile-stats">
             <div className="stats">
-              <p>C++ • C# • Javascript • Unity • Unreal Engine</p>
+              <p>
+                C++ • C# • Typescript/Javascript • Git<br />
+                React • Playwright • Unity • Unreal Engine</p>
               <p>
                 <a href="https://github.com/cocochen01">
                   <img src={githubIcon} className="imgID" alt="GitHub" />
