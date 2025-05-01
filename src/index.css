@@ -5,12 +5,13 @@ body {
   width: 100vw;
   height: 100vh;
   cursor: url('assets/images/cursor/gauntlet0.png'), auto;
-  background-image: url('assets/images/textures/inn_bg.jpg');
+  background-image: url('assets/images/textures/bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #a9a9a9;
+  backdrop-filter: blur(5px);
 }
 
 div {
